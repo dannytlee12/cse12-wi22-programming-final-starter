@@ -1,9 +1,9 @@
 /**
- * TODO: Add file header
- * Name:
- * ID:
- * Email:
- * File description:
+ * Name: Daniel Lee
+ * ID: A17209209
+ * Email: dtl001@ucsd.edu
+ * File description: This file contains the CSE12NaryTree class and the Node
+  inner class. A CSE12NaryTree is a tree where Nodes can have up to N children.
  */
 
 import java.util.List;
@@ -13,7 +13,8 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
- * TODO: Add class header
+ *  The CSE12NaryTree is a tree where Nodes can have up to N children. Node is
+ an inner class of CSE12NaryTree
  */
 public class CSE12NaryTree<E extends Comparable<E>> {
 
@@ -102,7 +103,10 @@ public class CSE12NaryTree<E extends Comparable<E>> {
     }
 
     /**
-     * TODO: Add method header
+     * This method adds a node to the tree.
+
+     @param element The data the will be put into the new node that will be
+     added to the tree
      */
     public void add(E element) {
       if(element == null){
@@ -136,7 +140,10 @@ public class CSE12NaryTree<E extends Comparable<E>> {
     }
 
     /**
-     * TODO: Add method header
+     * This method checks whether an element is contained in one of the nodes
+     of the tree
+
+     @param element The element that is being looked for in the tree.
      */
     public boolean contains(E element) {
       if(element == null){
@@ -160,7 +167,8 @@ public class CSE12NaryTree<E extends Comparable<E>> {
     }
 
     /**
-     * TODO: Add method header
+     * This method returns an ArrayList that contains the contents of
+     the tree in ascending order.
      */
     public ArrayList<E> sortTree(){
         ArrayList<E> ansList = new ArrayList<E>();
